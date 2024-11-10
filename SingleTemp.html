@@ -8,7 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="/css/Product_Showcase.css">
+
+
+<!-- For the filter font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="./css/SingleTemp.css">
     <title>SukyBakery</title>
 </head>
 <body>
@@ -55,64 +63,49 @@
         <!-- nav mobile end -->
     </nav>
 
+    <!-- ! Part 1 : Product Details -->
 
-    <div class="title">
-        <h2>全部產品</h2>
-        <h3>All Categories Cake</h3>
-    </div>
+    <div class="container part-a">
+        <div class="content">
+        <div class="title">
+            <h2>產品細節</h2>
+            <p>Product Details</p>
+        </div>
 
-    <div class="container-flexbox">
-        <div class="card-group">
+        <div class="product-container">
 
+            <!-- Product img, left -->
+        <div class="product-image">
+            <img src="./images/Cake/FlowerCake/FlowerCake_2.png" alt="product image" class="product-image">
+        </div>
 
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
-                <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
+        <!-- Product img, right -->  
+            <div class="product-info">
+                <div class="product_price_row">
+                    <h2 class="product-title" id="product-title">蛋糕及甜點</h2>
+                    <div class="product_price"><h2>$500/1pc</h2></div>
                 </div>
-            </a></div>
+                <p class="product-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur, totam quo in eligendi ad possimus quis! Officiis placeat nemo officia at soluta repudiandae illo, ipsam quod natus possimus. Sunt repellendus eius quia nulla veritatis deleniti corporis rerum, perspiciatis quod. Rem repellendus laudantium nam rerum labore, consequatur architecto explicabo quae?</p>                
 
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
-                <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
+                <div class="filter-row size">
+                    <p class="categories-text">尺 寸 :</p>
+                    <div class="button-group" id="btn">
+                        <button class="filter active" value="4">4 寸</button>
+                        <button class="filter" value="5">5 寸</button>
+                        <button class="filter" value="6">6 寸</button>
+                    </div>
                 </div>
-            </a></div>
-
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
-                <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
-                </div>
-            </a></div>
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
-                <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
-                </div>
-            </a></div>
-
-            
-       
-       
-
-
+            </div>
         </div>
     </div>
+    </div>
+        
+    </div>
 
 
-    
+
+
+
 
 
 
