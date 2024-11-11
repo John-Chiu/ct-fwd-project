@@ -87,7 +87,6 @@ a {
 ul.faqs {
     margin:50px;
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     row-gap: 16px;
     column-gap: 25px;
 }
