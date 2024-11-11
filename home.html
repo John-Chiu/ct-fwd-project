@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="
+https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
+" rel="stylesheet">
     <link rel="stylesheet" href="/css/home.css">
     <title>SukyBakery</title>
 </head>
+
 <body>
     <!-- navbar -->
-    <div class="nav-logo">
-        <img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link">
-    </div>
     <nav class="navbar">
+        <div class="nav-logo">
+            <img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link">
+        </div>
         <!-- navbar desktop -->
         <div class="nav-links">
             <ul class="nav-list" id="nav-list">
-                <li><a href="#" class="nav-link">蛋糕及甜點</a></li>
-                <li><a href="about_us.html" class="nav-link">關於我們</a></li>
-                <li><a href="order_notice.html" class="nav-link">訂購須知</a></li>
-                <li><a href="shopping_policy.html" class="nav-link">運送政策</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="cake">蛋糕及甜點<i class="ph ph-caret-down"></i></a>
+                    <!-- drop down mega-menu-->
+                    <div class="mega-menu">
+                        <div class="mega-menu-lists">
+                            <div class="mega-list">
+                                <p class="mega-link-title">原個蛋糕</p>
+                                <ul class="mega-links" id="whole-cakes">
+                                    <li><a href="#" class="mega-link">4寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">5寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">6寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">自訂尺寸</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-list">
+                                <p class="mega-link-title">件裝甜點</p>
+                                <ul class="mega-links" id="petite-desserts">
+                                    <li><a href="#" class="mega-link">曲奇</a></li>
+                                    <li><a href="#" class="mega-link">冬甩</a></li>
+                                    <li><a href="#" class="mega-link">紙杯蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">法式千層酥</a></li>
+                                </ul>
+                            </div>
+                            <!-- Party cake -->
+                            <div class="mega-list">
+                                <p class="mega-link-title">派對蛋糕系列</p>
+                                <ul class="mega-links" id="party-cakes">
+                                    <li><a href="#" class="mega-link">公仔造型蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">旋轉蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">燃燒蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">慶祝蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">鮮花蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">散水餅</a></li>
+                                </ul>
+                            </div>
+                            <!-- Series -->
+                            <div class="mega-list">
+                                <ul class="mega-links" id="whole-cakes">
+                                    <li class="series">
+                                        <img src="./images/Cake/FlowerCake/flowers_cake_megabar.png" class="series">
+                                        <a href="#" class="mega-link-title">鮮花蛋糕系列</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- drop down menu end -->
+                <li><a href="#" class="nav-link">關於我們</a></li>
+                <li><a href="#" class="nav-link">運送及風險</a></li>
                 <li><a href="#" class="nav-link">常見問題</a></li>
-                <li><a href="contact_us.html" class="nav-link">聯絡我們</a></li>
+                <li><a href="#" class="nav-link">聯絡我們</a></li>
             </ul>
-        </div>
-        <!-- navbar icon -->
-        <div class="nav-icons">
-            <ul class="nav-icons-list">
-                <li><a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#" class="nav-icon"><i class="fa-regular fa-heart"></i></a></li>
-            </ul>
+
+            <!-- navbar icon -->
+            <div class="nav-icons">
+                <ul class="nav-icons-list">
+                    <li><a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#" class="nav-icon"><i class="fa-regular fa-heart"></i></a></li>
+                </ul>
+            </div>
         </div>
         <!-- navbar desktop end -->
 
@@ -60,19 +115,22 @@
         <div class="hero-banner">
             <ul class="banner-list swiper-wrapper">
                 <li class="banner-item swiper-slide">
-                    <img class="first" src="/images/Banner/Big-Banner-BurnCake.jpg" style="height: auto; width: 100%;" alt="Image" class="banner-image">
+                    <img class="first" src="/images/Banner/Big-Banner-BurnCake.jpg" style="height: auto; width: 100%;"
+                        alt="Image" class="banner-image">
                 </li>
                 <li class="banner-item swiper-slide">
-                    <img src="/images/Banner/Big-Banner-Cookies.jpg" style="height: auto; width: 100%;" alt="Image" class="banner-image">
+                    <img src="/images/Banner/Big-Banner-Cookies.jpg" style="height: auto; width: 100%;" alt="Image"
+                        class="banner-image">
                 </li>
                 <li class="banner-item swiper-slide">
-                    <img class="first" src="/images/Banner/Big-Banner-Cupckes.jpg" style="height: auto; width: 100%;" alt="Image" class="banner-image">
+                    <img class="first" src="/images/Banner/Big-Banner-Cupckes.jpg" style="height: auto; width: 100%;"
+                        alt="Image" class="banner-image">
                 </li>
             </ul>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-    </section> 
+    </section>
 
     <!-- Signature Cake -->
     <section class="signature-cake">
@@ -82,12 +140,17 @@
         </div>
         <div class="signature-cake-grid">
             <div class="cake">
-                <a href="#"><img src="/images/BurnAwayCake/BurnAwayCake_2.png"alt="sc-img" class="sc-img"></a>
-                <div><p>燃燒蛋糕 <i class="fa-solid fa-arrow-right-long"></i></p></div>
+                <a href="#"><img src="/images/BurnAwayCake/BurnAwayCake_2.png" alt="sc-img" class="sc-img"></a>
+                <div>
+                    <p>燃燒蛋糕 <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
             </div>
             <div class="signature-cake">
-                <a href="#"><img src="/images/CelebratingCake/Birthday/CelebratingCake_8.png" alt="sc-img" class="sc-img"></a>
-                <div><p>自訂尺寸慶祝蛋糕 <i class="fa-solid fa-arrow-right-long"></i></p></div>
+                <a href="#"><img src="/images/CelebratingCake/Birthday/CelebratingCake_8.png" alt="sc-img"
+                        class="sc-img"></a>
+                <div>
+                    <p>自訂尺寸慶祝蛋糕 <i class="fa-solid fa-arrow-right-long"></i></p>
+                </div>
             </div>
         </div>
     </section>
@@ -100,7 +163,7 @@
         </div>
         <div class="cake-grid">
             <div class="cake">
-                <a href="#"><img src="/images/Cake/FondantCake/FondantCake_5.png"alt="wc-img" class="wc-img"></a>
+                <a href="#"><img src="/images/Cake/FondantCake/FondantCake_5.png" alt="wc-img" class="wc-img"></a>
                 <ul>
                     <li>公仔造型蛋糕</li>
                     <li>Fondant cake</li>
@@ -142,7 +205,7 @@
         </div>
         <div class="cake-grid">
             <div class="cake">
-                <a href="#"><img src="/images/Cookies/Cookies_3.png"alt="wc-img" class="wc-img"></a>
+                <a href="#"><img src="/images/Cookies/Cookies_3.png" alt="wc-img" class="wc-img"></a>
                 <ul>
                     <li>曲奇</li>
                     <li>Cookies</li>
@@ -180,31 +243,31 @@
     <footer class="section footer">
         <!-- footer left -->
         <div class="footer-left">
-        <p>FOLLOW US</p>
-        <ul class="footer-icons">
-            <li>
-                <a href="http://www.facebook.com" class="footer-icon">
-                    <i class="fa-brands fa-square-facebook"></i>
-                </a>   
-            </li>
-            <li>
-                <a href="http://www.twitter.com" class="footer-icon">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a>   
-            </li>
+            <p>FOLLOW US</p>
+            <ul class="footer-icons">
+                <li>
+                    <a href="http://www.facebook.com" class="footer-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" class="footer-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
 
-            <li>
-                <a href="https://www.whatsapp.com/" class="footer-icon">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                </a>   
-            </li>  
-        </ul>
-        <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
-        <p class="copyright">
-            copyright & copy; Travel tours company
-            <span id="date"></span> all right reserved
-        </p>
-    </div>
+                <li>
+                    <a href="https://www.whatsapp.com/" class="footer-icon">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
+            <p class="copyright">
+                copyright & copy; Travel tours company
+                <span id="date"></span> all right reserved
+            </p>
+        </div>
         <!-- footer right -->
         <div class="footer-right">
             <ul class="footer-links">
@@ -223,4 +286,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
 </body>
+
 </html>
