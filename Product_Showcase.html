@@ -60,10 +60,23 @@
         <h3>All Categories Cake</h3>
     </div>
 
+    <div class="filter">
+        <select id="category-filter">
+            <option value="all">選擇甜點類型:</option>
+            <option value="蛋糕">蛋糕</option>
+            <option value="件裝甜點">件裝甜點</option>
+            <option value="派對蛋糕系列">派對蛋糕系列</option>
+        </select>
+
+        <select id="subcategory-filter">
+            <option value="all">選擇甜點類別:</option>
+        </select>
+    </div>
+
     <div class="container-flexbox">
         <div class="card-group">
 
-            <div class="card"><a href="">
+            <div class="card 蛋糕 4寸蛋糕"><a href="">
                 <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
                 <div class="card-content">
                     <h3 class="card-title">公仔造型蛋糕</h3>
@@ -72,9 +85,8 @@
                 </div>
             </a></div>
 
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+            <div class="card 件裝甜點 曲奇"><a href="">
+                <img src="/images/Cake/FondantCake/FondantCake_1.png" alt="card1" class="card-image">
                 <div class="card-content">
                     <h3 class="card-title">公仔造型蛋糕</h3>
                     <p class="card-text">Good Food Good Food</p>
@@ -82,9 +94,8 @@
                 </div>
             </a></div>
 
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+            <div class="card 蛋糕 5寸蛋糕"><a href="">
+                <img src="/images/Cake/FlowerCake/FlowerCake_2.png" alt="card1" class="card-image">
                 <div class="card-content">
                     <h3 class="card-title">公仔造型蛋糕</h3>
                     <p class="card-text">Good Food Good Food</p>
@@ -92,14 +103,24 @@
                 </div>
             </a></div>
 
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+            <div class="card 蛋糕 6寸蛋糕"><a href="">
+                <img src="/images/Cake/FlowerCake/FlowerCake_3.png" alt="card1" class="card-image">
                 <div class="card-content">
                     <h3 class="card-title">公仔造型蛋糕</h3>
                     <p class="card-text">Good Food Good Food</p>
                     <h3 class="card-price">$99.9</h3>
                 </div>
             </a></div>
+
+            <div class="card 蛋糕 自訂尺寸"><a href="">
+                <img src="/images/Cake/FlowerCake/FlowerCake_4.png" alt="card1" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">公仔造型蛋糕</h3>
+                    <p class="card-text">Good Food Good Food</p>
+                    <h3 class="card-price">$99.9</h3>
+                </div>
+            </a></div>
+
         </div>
     </div>
 
@@ -149,5 +170,6 @@
     <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 </html>

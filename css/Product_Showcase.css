@@ -333,7 +333,7 @@ a {
 .title {
     width: 100%;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .title h2 {
@@ -351,6 +351,43 @@ a {
 
  ====================*/
 
+
+/* ==================== 
+
+01-05-Filter-Start
+
+ ====================*/
+
+ .filter{
+    width: 100%;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+ }
+
+#category-filter,#subcategory-filter{
+
+    min-width: 58px;
+    height: 40px;
+    padding:0 12px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid var(--clr-primary-6);
+ }
+
+
+
+ /* ==================== 
+
+01-05-Filter-End
+
+ ====================*/
 
 /* ==================== 
 
