@@ -14,12 +14,8 @@ const BTN_REMOVE_CLASSNAME = 'btn-remove';
 const BTN_ADD_TO_CART_CLASSNAME = 'addToCartBtn';
 
 
-let cart = [];
-if (localStorage.getItem('cart')) {
-  cart = JSON.parse(localStorage.getItem('cart'));
-}
 // DEBUG
-console.log('load cart from localStorage:', cart);
+console.log('load cart from localStorage:', getCartFromLocalStorage());
 
 const cartItemListHTML = document.querySelector('.cart-items-list');
 
@@ -37,25 +33,24 @@ renderCartHTML();
   });
 })();
 
-function addToCart(productId) {
-  // const product = cart.find((item) => item.id === productId);
-  const cartItem = cart.find((item) => item.id === productId);
+function addToCart(productId, quantity) {
+  if (quantity == undefined)
+    quantity = 1;
+  const cart = getCartFromLocalStorage();
+  const cartItem = getCartItem(productId, cart);
+
   if (cartItem) {
-    cartItem.quantity++;
+    cartItem.quantity += quantity;
   } else {
     cart.push({ id: productId, quantity: 1 });
   }
-  updateLocalStorage();
+  updateLocalStorage(cart);
   renderCartHTML();
-}
-
-function updateLocalStorage() {
-  localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 // display all products in specify html element
 function displayProducts() {
-  let productListHTML = document.querySelector('.products-list');
+  const productListHTML = document.querySelector('.products-list');
   productListHTML.innerHTML = '';
 
   products.forEach((product) => {
@@ -77,6 +72,7 @@ function displayProducts() {
 // clear and render shopping cart content:
 // item, price, quantity, subtotal, total
 function renderCartHTML() {
+  const cart = getCartFromLocalStorage();
   console.log('runtime cart', cart);
   cartItemListHTML.innerHTML = '';
   let totalPrice = 0;
@@ -85,7 +81,7 @@ function renderCartHTML() {
     const product = getProduct(item.id);
     totalPrice += product.price * item.quantity;
 
-    let newItem = document.createElement('div');
+    const newItem = document.createElement('div');
     newItem.classList.add('cart-item');
 
     newItem.innerHTML = `
@@ -114,8 +110,8 @@ function renderCartHTML() {
 
   // +,- button onclick handler for updating cart item quantity
   const handleClickQuantityBtn = (e) => {
-    let btn = e.target;
-    let id = btn.dataset.id;
+    const btn = e.target;
+    const id = btn.dataset.id;
     if (btn.classList.contains(BTN_PLUS_CLASSNAME)) {
       updateQuantity(id, ADD)
     } else if (btn.classList.contains(BTN_MINUS_CLASSNAME)) {
@@ -138,8 +134,8 @@ function renderCartHTML() {
 
   // handler for remove button
   const handleClickRemoveButton = (e) => {
-    let btn = e.target;
-    let id = btn.dataset.id;
+    const btn = e.target;
+    const id = btn.dataset.id;
     updateQuantity(id, REMOVE);
   }
 
@@ -152,37 +148,49 @@ function renderCartHTML() {
 
 // update quantity of item in cart
 function updateQuantity(productId, action) {
-  // let item = cart.find((cartItem) => cartItem.id == productId);
-  let item = getCartItem(productId);
+  let cart = getCartFromLocalStorage();
+  const cartItem = getCartItem(productId, cart);
   
   switch (action) {
     case ADD:
-      item.quantity++;
+      cartItem.quantity++;
       break;
     case MINUS:
-      item.quantity--;
-      if (item.quantity <= 0) {
-        cart = cart.filter(cartItem => cartItem !== item);
+      cartItem.quantity--;
+      if (cartItem.quantity <= 0) {
+        cart = cart.filter(x => x !== cartItem);
       }
       break;
     case REMOVE:
-      cart = cart.filter(cartItem => cartItem !== item);
+      cart = cart.filter(x => x !== cartItem);
       break;
     default:
       break;
   }
-  updateLocalStorage();
+  updateLocalStorage(cart);
   renderCartHTML();
 }
 
 // =======  helper function =======
+function updateLocalStorage(cart) {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function getCartFromLocalStorage() {
+  let cart = [];
+  if (localStorage.getItem('cart')) {
+    cart = JSON.parse(localStorage.getItem('cart'));
+  }
+  return cart;
+}
+
 function getProduct(productId) {
   return products.find((p) => {
     return p.id == productId;
   });
 }
 
-function getCartItem(productId) {
+function getCartItem(productId, cart) {
   return cart.find((item) => item.id == productId);
 }
 // =======  helper function END =======
