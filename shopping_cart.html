@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/aboutus.css">
+    <link rel="stylesheet" href="/css/shopping_cart.css">
     <link href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css" rel="stylesheet">
     <title>SukyBakery</title>
 </head>
@@ -22,7 +22,8 @@
             <ul class="nav-list" id="nav-list">
                 <li><a href="#" class="nav-link">蛋糕及甜點</a></li>
                 <li><a href="#" class="nav-link">關於我們</a></li>
-                <li><a href="#" class="nav-link">運送及風險</a></li>
+                <li><a href="#" class="nav-link">訂購須知</a></li>
+                <li><a href="#" class="nav-link">運送政策</a></li>
                 <li><a href="#" class="nav-link">常見問題</a></li>
                 <li><a href="#" class="nav-link">聯絡我們</a></li>
             </ul>
@@ -45,7 +46,8 @@
             <ul class="mobile-nav-list" id="mobile-nav-list">
                 <li><a href="#" class="nav-link">蛋糕及甜點</a></li>
                 <li><a href="#" class="nav-link">關於我們</a></li>
-                <li><a href="#" class="nav-link">運送及風險</a></li>
+                <li><a href="#" class="nav-link">訂購須知</a></li>
+                <li><a href="#" class="nav-link">運送政策</a></li>
                 <li><a href="#" class="nav-link">常見問題</a></li>
                 <li><a href="#" class="nav-link">聯絡我們</a></li>
             </ul>
@@ -53,48 +55,61 @@
     </nav>
     <!-- nav mobile end -->
 
-    <!-- Banner -->
-    <div class="banner">
-        <h2>關於我們</h2>
-        <h3>ABOUT US</h3>
-        <p>歡迎來到 Suky Bakery！我們是一家位於香港的蛋糕店，專注於製作健康美味的低糖低油蛋糕。無論是慶祝生日還是其他特別場合，我們的蛋糕都能為您的聚會增添甜蜜的驚喜。</p>
+    <!-- Title -->
+    <div class="cart-title">
+        <h2>購物車</h2>
+        <h3>CART</h3>
     </div>
 
-    <div class="content">
-        <div class="why-us">
-            <h3>為何選擇我們</h3>
-            <h4>WHY CHOOSE US</h4>
+
+    <!-- item bar -->
+    <div class="item-bar">
+        <ul class="title-list">
+            <li class="title-name">產品</li>
+            <li class="title-amount">數量</li>
+            <li class="title-price">小計</li>
+        </ul>
+    </div>
+    
+    <!-- Product -->
+    <div class="purchased-items">
+        
+        <!-- customer selected product -->
+        <div class="purchased-items-box">
+            <div><img src="/images/Cake/FlowerCake/FlowerCake_6.png" class="item-img" alt="item-img"></div>
+            <div class="item-info">
+                <ul class="item-info-details">
+                    <li><h3>鮮花蛋糕</h3></li>
+                    <li><h4>FLOWER CAKE</h4></li>
+                    <li><h5>選項:5寸 / 紅色 / 原味 / 基本顏色玫瑰花 / 周年蛋糕</h5></li>
+                </ul>
+            </div>
+            <div class="item-amount">
+                <p>1</p>
+            </div>
+            <div class="item-price">
+                <p>$650</p>
+            </div>
+        </div> 
+    </div>
+
+    <!--  -->
+    <div class="purchased-items-footer">
+        <p class="total-price">總計 $99.9</p>
+        <p class="mention-item">備註</p>
+        <div>
+            <textarea id="text" name="text" rows="5" cols="55"></textarea>
         </div>
-        <div class="content-service-one">
-            <h5><i class="ph ph-fast-forward"></i>急單服務</h5>
-            <p>我們接受急單，並不收取額外附加費（視乎人手而定）</p>
-        </div>
-        <div class="content-service-two">
-            <h5><i class="ph ph-cake"></i>手工製作</h5>
-            <p>所有蛋糕均為全手工製作，絕不添加防腐劑，確保每一口都新鮮可口</p>
-        </div>
-        <div class="content-service-three">
-            <h5><i class="ph ph-heart"></i>健康選擇</h5>
-            <p>我們提供低糖低油的蛋糕選擇，讓您在享受美味的同時，也能保持健康，您可以放心選擇我們的產品</p>
-        </div>
-        <div class="content-service-four">
-            <h5><i class="ph ph-identification-card"></i>商業登記</h5>
-            <p>我們持有商業登記及食物製造廠牌，您可以放心選擇我們的產品</p>
+        <!-- Submit button -->
+        <div class="submit-btn">
+            <a href="#" class="btn">結帳</a>
         </div>
     </div>
 
-    <!-- JOIN US -->
-    <div class="join-us">
-        <div class="join-us-image">
-            <img src="/images/Cupcake/Cupcake_set_3.png" alt="Image" class="ju-image">
-        </div>
-        <div class="join-us-content">
-            <h3>加入我們的團隊!</h3>
-            <h4>JOIN US!</h4>
-            <p>我們不僅熱愛製作美味的蛋糕，還熱衷於培養創意的團隊。如果你對烘焙充滿熱情，並希望在充滿活力的環境中工作，我們非常希望能聽到你的聲音！</p>
-            <button class="btn">查看更多</button>
-        </div>
-    </div>
+
+
+
+
 
     <!-- footer -->
     <footer class="section footer">
@@ -130,7 +145,8 @@
             <ul class="footer-links">
                 <li><a href="#" class="footer-link">蛋糕及甜點</a></li>
                 <li><a href="#" class="footer-link">關於我們</a></li>
-                <li><a href="#" class="footer-link">運送及風險</a></li>
+                <li><a href="#" class="footer-link">訂購須知</a></li>
+                <li><a href="#" class="footer-link">運送政策</a></li>
                 <li><a href="#" class="footer-link">常見問題</a></li>
                 <li><a href="#" class="footer-link">聯絡我們</a></li>
             </ul>
