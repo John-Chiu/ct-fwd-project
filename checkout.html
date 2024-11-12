@@ -65,7 +65,7 @@
 
     <form class="checkout-form">
         <label>
-            <input type="radio" name="pick-up" value="delivery" checked>本地運送
+            <input type="radio" name="pick-up" value="delivery" checked required>本地運送
         </label>
         <label>
             <input type="radio" name="pick-up" value="self" >自取
@@ -76,26 +76,26 @@
         <!-- fill box 1 -->
         <p>姓名 Name</p>
         <div>
-            <input type="text">
+            <input type="text" required>
         </div>
         <!-- fill box 2 -->
         <p>電話 Phone no.</p>
         <div>
-            <input type="text">
+            <input type="tel" pattern="[0-9]{8}" required>
         </div>
         <!-- fill box 3 -->
         <p>電郵地址 Email</p>
         <div>
-            <input type="text">
+            <input type="email" required>
         </div>
         <!-- fill box 4 -->
         <p>地址 Address</p>
         <div>
-            <input type="text">
+            <input type="text" required>
         </div>
         <!-- Submit button -->
         <div class="submit-btn">
-            <a href="#" class="btn">結帳</a>
+            <input type="submit" class="btn" value="結帳">
         </div>
     </form>
 
