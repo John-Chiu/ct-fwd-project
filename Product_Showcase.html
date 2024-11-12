@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/Product_Showcase.css">
     <title>SukyBakery</title>
 </head>
+
 <body>
     <!-- navbar -->
     <div class="nav-logo">
         <img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link">
     </div>
     <nav class="navbar">
-        
-        
+
+
         <!-- navbar desktop -->
         <div class="nav-links">
             <ul class="nav-list" id="nav-list">
@@ -60,46 +65,246 @@
         <h3>All Categories Cake</h3>
     </div>
 
+    <div class="filter">
+        <select id="category-filter">
+            <option value="all">選擇甜點類型:</option>
+            <option value="蛋糕">蛋糕</option>
+            <option value="件裝甜點">件裝甜點</option>
+            <option value="派對蛋糕系列">派對蛋糕系列</option>
+        </select>
+
+        <select id="subcategory-filter">
+            <option value="all">選擇甜點類別:</option>
+        </select>
+    </div>
+
     <div class="container-flexbox">
         <div class="card-group">
 
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+            <div class="card 蛋糕 4寸蛋糕">
+                <a href="">
+                    <img src="/images/Cake/FlowerCake/FlowerCake_7.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">藍莓花卉蛋糕</h3>
+                        <p class="card-text">這款蛋糕以藍莓裝飾，清新宜人的色調，帶來自然的甜美。鬆軟的蛋糕體與細膩的奶油完美結合，每一口都充滿愉悅與滿足。</p>
+                        <h3 class="card-price">$180</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 蛋糕 5寸蛋糕">
+                <a href="">
+                    <img src="/images/Cake/FlowerCake/FlowerCake_3.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">紫羅蘭花卉蛋糕</h3>
+                        <p class="card-text">紫色花卉點綴，搭配細膩的奶油，讓這款蛋糕充滿優雅與芬芳。入口即化的口感，適合享受午後時光的美好甜點。</p>
+                        <h3 class="card-price">$200</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 蛋糕 6寸蛋糕">
+                <a href="">
+                    <img src="/images/Cake/FlowerCake/FlowerCake_2.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">紅玫瑰花卉蛋糕</h3>
+                        <p class="card-text">紅玫瑰的華麗裝飾，結合濃郁巧克力，完美表現愛與浪漫。層層疊疊的蛋糕體，帶來奢華的享受，適合特別的慶祝時刻。</p>
+                        <h3 class="card-price">$520</h3>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card 蛋糕 自訂尺寸">
+                <a href="">
+                    <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">白蘭花卉蛋糕</h3>
+                        <p class="card-text">純白花卉設計象徵純潔與高雅，入口即化的口感令人回味。細緻的奶油與柔軟的蛋糕體，完美融合，帶來無與倫比的味覺享受。</p>
+                        <h3 class="card-price">$520</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 件裝甜點 曲奇">
+                <a href="">
+                    <img src="/images/Cookies/Cookies_2.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">美樂蒂與庫洛米曲奇</h3>
+                        <p class="card-text">這款曲奇融合了美樂蒂與庫洛米的可愛造型，香甜酥脆，帶來童趣與美味的雙重享受，每一口都讓人愛不釋手。</p>
+                        <h3 class="card-price">$300</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="card 件裝甜點 曲奇">
+                <a href="">
+                <img src="/images/Cookies/Cookies_3.png" alt="card1" class="card-image">
                 <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
+                    <h3 class="card-title">原味奶油曲奇</h3>
+                    <p class="card-text">經典原味奶油曲奇，採用優質奶油烘焙而成，香氣撲鼻，酥鬆可口，是任何時刻都無法抗拒的美味小點心。</p>
+                    <h3 class="card-price">$250</h3>
                 </div>
-            </a></div>
+            </a>
+        </div>
 
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+            <div class="card 件裝甜點 曲奇">
+                <a href="">
+                <img src="/images/Cookies/Cookies_5.png" alt="card1" class="card-image">
                 <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
+                    <h3 class="card-title">客製化名字曲奇</h3>
+                    <p class="card-text">這款餅乾可以客製化名字，讓您的甜點獨一無二。適合送禮或特別場合，展現心意與創意的絕佳選擇。</p>
+                    <h3 class="card-price">$350</h3>
                 </div>
-            </a></div>
+            </a>
+        </div>
 
-
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+            <div class="card 件裝甜點 曲奇">
+                <a href="">
+                <img src="/images/Cookies/Cookies_Zoomin_1.png" alt="card1" class="card-image">
                 <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
+                    <h3 class="card-title">可愛鼠造型曲奇</h3>
+                    <p class="card-text">以可愛的鼠造型設計，這款餅乾不僅外觀討喜，還擁有香甜的口感，讓人一見傾心，適合各種聚會與活動。</p>
+                    <h3 class="card-price">$280</h3>
                 </div>
-            </a></div>
+            </a>
+        </div> -->
 
-            <div class="card"><a href="">
-                <img src="/images/Cake/FlowerCake/FlowerCake_1.png" alt="card1" class="card-image">
+
+            <div class="card 件裝甜點 紙杯蛋糕">
+                <a href="">
+                    <img src="/images/Cupcake/Cupcake_set_4.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">美樂蒂與庫洛米杯子蛋糕</h3>
+                        <p class="card-text">這款杯子蛋糕以美樂蒂與庫洛米的可愛造型為特色，色彩繽紛，口感柔軟，讓每一口都充滿歡樂與甜美。</p>
+                        <h3 class="card-price">$150</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- <div class="card 件裝甜點 紙杯蛋糕">
+                <a href="">
+                <img src="/images/Cupcake/Cupcake_8.png" alt="card1" class="card-image">
                 <div class="card-content">
-                    <h3 class="card-title">公仔造型蛋糕</h3>
-                    <p class="card-text">Good Food Good Food</p>
-                    <h3 class="card-price">$99.9</h3>
+                    <h3 class="card-title">巧克力杯子蛋糕</h3>
+                    <p class="card-text">濃郁的巧克力杯子蛋糕，口感綿密，滿滿的可可香氣，是巧克力愛好者不可錯過的絕佳選擇。</p>
+                    <h3 class="card-price">$130</h3>
                 </div>
-            </a></div>
+            </a>
+        </div>
+
+            <div class="card 件裝甜點 紙杯蛋糕">
+                <a href="">
+                <img src="/images/Cupcake/Cupcake_5.png" alt="card1" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">白色玫瑰杯子蛋糕</h3>
+                    <p class="card-text">純白色杯子蛋糕上點綴著精緻的玫瑰，口感細膩，外觀高雅，是完美的浪漫甜點。</p>
+                    <h3 class="card-price">$160</h3>
+                </div>
+            </a>
+        </div>
+
+            <div class="card 件裝甜點 紙杯蛋糕">
+                <a href="">
+                <img src="/images/Cupcake/Cupcake_2.png" alt="card1" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">淡藍淡紅與黃花杯子蛋糕</h3>
+                    <p class="card-text">這款杯子蛋糕融合淡藍、淡紅的色調，並以黃色花朵裝飾，色彩柔和，味道清新，讓人耳目一新。</p>
+                    <h3 class="card-price">$140</h3>
+                </div>
+            </a>
+        </div> -->
+
+            <div class="card 件裝甜點 冬甩">
+                <a href="">
+                    <img src="/images/DounghNut/DounghNut_1.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">藍色甜甜圈</h3>
+                        <p class="card-text">這款甜甜圈以鮮豔的藍色糖霜覆蓋，外觀吸引，口感鬆軟，帶來清新的甜味，是視覺與味覺的雙重享受。</p>
+                        <h3 class="card-price">$100</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 件裝甜點 法式千層酥">
+                <a href="">
+                    <img src="/images/MilleFeuille/MilleFeuille_1.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">水果千層酥</h3>
+                        <p class="card-text">層層酥脆的千層酥夾著新鮮水果與濃郁奶油，每一口都是豐富的口感與清新的果香，完美融合。</p>
+                        <h3 class="card-price">$180</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 派對蛋糕系列 公仔造型蛋糕">
+                <a href="">
+                    <img src="/images/Cake/FondantCake/FondantCake_7.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">公仔造型蛋糕</h3>
+                        <p class="card-text">這款蛋糕以精緻的公仔造型呈現，獨特的設計讓每個慶祝活動更加精彩，是小朋友生日派對的最佳選擇。</p>
+                        <h3 class="card-price">$600</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 派對蛋糕系列 旋轉蛋糕">
+                <a href="">
+                    <img src="/images/RotatingCake/RotatingCake_2.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">旋轉蛋糕</h3>
+                        <p class="card-text">旋轉蛋糕帶來視覺上的驚豔效果，搭配美味的多層口感，讓您的慶祝時刻充滿驚喜與歡樂。</p>
+                        <h3 class="card-price">$650</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 派對蛋糕系列 燃燒蛋糕">
+                <a href="">
+                    <img src="/images/BurnAwayCake/BurnAwayCake_2.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">燃燒蛋糕</h3>
+                        <p class="card-text">這款蛋糕以獨特的燃燒效果呈現，讓您的派對瞬間變得火熱，是展現激情的完美甜點。</p>
+                        <h3 class="card-price">$700</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 派對蛋糕系列 慶祝蛋糕">
+                <a href="">
+                    <img src="/images/CelebratingCake/Birthday/CelebratingCake_3.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">慶祝蛋糕</h3>
+                        <p class="card-text">專為各種慶祝活動設計的蛋糕，外觀華麗，口感豐富，為您的特別時刻增添甜蜜與喜悅。</p>
+                        <h3 class="card-price">$550</h3>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card 派對蛋糕系列 鮮花蛋糕">
+                <a href="">
+                    <img src="/images/CelebratingCake/Wedding/CelebratingCake_Wedding_2.png" alt="card1"
+                        class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">鮮花蛋糕</h3>
+                        <p class="card-text">專為各種慶祝活動設計的蛋糕，外觀華麗，口感豐富，為您的特別時刻增添甜蜜與喜悅。</p>
+                        <h3 class="card-price">$580</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card 派對蛋糕系列 散水餅">
+                <a href="">
+                    <img src="/images/Cookies/Cookies_Zoomin_2.png" alt="card1" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">散水餅</h3>
+                        <p class="card-text">傳統的散水餅，象徵祝福與分享，口感香甜，適合用於傳統節慶或特別的家庭聚會。</p>
+                        <h3 class="card-price">$120</h3>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
 
@@ -108,31 +313,31 @@
     <footer class="section footer">
         <!-- footer left -->
         <div class="footer-left">
-        <p>FOLLOW US</p>
-        <ul class="footer-icons">
-            <li>
-                <a href="http://www.facebook.com" class="footer-icon">
-                    <i class="fa-brands fa-square-facebook"></i>
-                </a>   
-            </li>
-            <li>
-                <a href="http://www.twitter.com" class="footer-icon">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a>   
-            </li>
+            <p>FOLLOW US</p>
+            <ul class="footer-icons">
+                <li>
+                    <a href="http://www.facebook.com" class="footer-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" class="footer-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
 
-            <li>
-                <a href="https://www.whatsapp.com/" class="footer-icon">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                </a>   
-            </li>  
-        </ul>
-        <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
-        <p class="copyright">
-            copyright & copy; Travel tours company
-            <span id="date"></span> all right reserved
-        </p>
-    </div>
+                <li>
+                    <a href="https://www.whatsapp.com/" class="footer-icon">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
+            <p class="copyright">
+                copyright & copy; Travel tours company
+                <span id="date"></span> all right reserved
+            </p>
+        </div>
         <!-- footer right -->
         <div class="footer-right">
             <ul class="footer-links">
@@ -149,5 +354,7 @@
     <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
+
 </html>
