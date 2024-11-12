@@ -8,3 +8,5 @@ navBtn.addEventListener("click", () => {
 // add date
 const date = document.getElementById("date");
 date.innerHTML = new Data().getFullYear();
+
+//

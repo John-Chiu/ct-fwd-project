@@ -15,7 +15,7 @@
     <link href="
 https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
 " rel="stylesheet">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>SukyBakery</title>
 </head>
 
@@ -23,7 +23,7 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
     <!-- navbar -->
     <nav class="navbar">
         <div class="nav-logo">
-            <img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link">
+            <a href="index.html"><img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link"></a>
         </div>
         <!-- navbar desktop -->
         <div class="nav-links">
@@ -76,10 +76,11 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
                     </div>
                 </li>
                 <!-- drop down menu end -->
-                <li><a href="#" class="nav-link">關於我們</a></li>
-                <li><a href="#" class="nav-link">運送政策</a></li>
-                <li><a href="#" class="nav-link">常見問題</a></li>
-                <li><a href="#" class="nav-link">聯絡我們</a></li>
+                <li><a href="about_us.html" class="nav-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="nav-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="nav-link">運送政策</a></li>
+                <li><a href="faqs.html" class="nav-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="nav-link">聯絡我們</a></li>
             </ul>
 
             <!-- navbar icon -->
@@ -87,64 +88,70 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
                 <ul class="nav-icons-list">
                     <li><a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href="#" class="nav-icon"><i class="fa-regular fa-heart"></i></a></li>
                 </ul>
             </div>
         </div>
         <!-- navbar desktop end -->
 
-        <!-- nav mobile  -->
+        <!-- nav mobile -->
         <div class="nav-mobile">
             <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="mobile-nav-list" id="mobile-nav-list">
-                <li class="all-cakes"><a href="#" class="nav-link">
-                        蛋糕及甜點<i class="ph ph-caret-down"></i></a></li>
-                <!-- mobile mega menu-->
-                <div class="mobile-mega-menu">
-                    <div class="mobile-mega-menu-lists">
-                        <div class="mobile-mega-list">
-                            <p class="mobile-mega-link-title" id="mobile-mega-link-title">原個蛋糕<i class="ph ph-caret-down"></i></p>
-                                <ul class="mobile-mega-links" id="mobile-mega-links">
-                                    <li><a href="#" class="mega-link">所有蛋糕</a></li>
-                                    <li><a href="#" class="mega-link">4寸蛋糕</a></li>
-                                    <li><a href="#" class="mega-link">5寸蛋糕</a></li>
-                                    <li><a href="#" class="mega-link">6寸蛋糕</a></li>
+                <li class="all-cakes" id="cake-toggle">
+                    <a href="#" class="mobile-mega-drop">蛋糕及甜點<i class="ph ph-caret-down"></i></a>
+                    <!-- mobile mega menu -->
+                    <div class="mobile-mega-menu" id="mobile-mega-menu">
+                        <div class="mobile-mega-menu-lists">
+                            <!-- mega menu section1 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#cake-section">原個蛋糕<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="cake-section">
+                                    <li><a href="#" class="mobile-mega-sublink">所有蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">4寸蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">5寸蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">6寸蛋糕</a></li>
                                 </ul>
+                            </div>
+                            <!-- mega menu section2 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#dessert-section">件裝甜點<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="dessert-section">
+                                    <li><a href="#" class="mobile-mega-sublink">曲奇</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">冬甩</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">紙杯蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">法式千層酥</a></li>
+                                </ul>
+                            </div>
+                            <!-- mega menu section3 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#party-section">派對蛋糕系列<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="party-section">
+                                    <li><a href="#" class="mobile-mega-sublink">公仔造型蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">旋轉蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">燃燒蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">慶祝蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">鮮花蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">散水餅</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mobile-mega-list">
-                        <p class="mobile-mega-link-title" id="mobile-mega-link-title">件裝甜點<i class="ph ph-caret-down"></i>
-                        </p>
-                        <ul class="mobile-mega-links" id="mobile-mega-links">
-                            <li><a href="#" class="mega-link">曲奇</a></li>
-                            <li><a href="#" class="mega-link">冬甩</a></li>
-                            <li><a href="#" class="mega-link">紙杯蛋糕</a></li>
-                            <li><a href="#" class="mega-link">法式千層酥</a></li>
-                        </ul>
-                    </div>
-                    <!-- Party cake -->
-                    <div class="mobile-mega-list">
-                        <p class="mobile-mega-link-title">派對蛋糕系列<i class="ph ph-caret-down"></i></p>
-                        <ul class="mobile-mega-links" id="mobile-mega-links">
-                            <li><a href="#" class="mega-link">公仔造型蛋糕</a></li>
-                            <li><a href="#" class="mega-link">旋轉蛋糕</a></li>
-                            <li><a href="#" class="mega-link">燃燒蛋糕</a></li>
-                            <li><a href="#" class="mega-link">慶祝蛋糕</a></li>
-                            <li><a href="#" class="mega-link">鮮花蛋糕</a></li>
-                            <li><a href="#" class="mega-link">散水餅</a></li>
-                        </ul>
-                    </div>
-                    </li>
-                    <li><a href="#" class="nav-link">關於我們</a></li>
-                    <li><a href="#" class="nav-link">訂購須知</a></li>
-                    <li><a href="#" class="nav-link">運送政策</a></li>
-                    <li><a href="#" class="nav-link">常見問題</a></li>
-                    <li><a href="#" class="nav-link">聯絡我們</a></li>
+                </li>
+                <li><a href="about_us.html" class="mobile-mega-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="mobile-mega-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="mobile-mega-link">運送政策</a></li>
+                <li><a href="faqs.html" class="mobile-mega-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="mobile-mega-link">聯絡我們</a></li>
             </ul>
         </div>
-        <!-- nav mobile end -->
     </nav>
+    <!-- nav end -->
+
 
     <!-- Hero -->
     <section class="hero swiper">
@@ -282,18 +289,19 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
             <p>FOLLOW US</p>
             <ul class="footer-icons">
                 <li>
-                    <a href="http://www.facebook.com" class="footer-icon">
+                    <a href="https://www.facebook.com/p/SukyBakery-100063550942171/?_rdr" class="footer-icon">
                         <i class="fa-brands fa-square-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.twitter.com" class="footer-icon">
+                    <a href="https://www.instagram.com/suky_bakery/" class="footer-icon">
                         <i class="fa-brands fa-square-instagram"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.whatsapp.com/" class="footer-icon">
+                    <a href="https://api.whatsapp.com/send/?phone=85252480004&text&type=phone_number&app_absent=0"
+                        class="footer-icon">
                         <i class="fa-brands fa-square-whatsapp"></i>
                     </a>
                 </li>
@@ -317,10 +325,14 @@ https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
         </div>
     </footer>
 
-
+    <!-- hamburger menu and mega menu -->
     <script src="./js/app.js"></script>
+    <script src="./js/megamenu.js"></script>
+
+    <!-- swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
+
 </body>
 
 </html>
