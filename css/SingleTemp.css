@@ -377,6 +377,15 @@ a{
 }
 
 @media (max-width : 768px) {
+
+    .card-container{
+        max-width: 576px;
+    }
+
+    .card-group{
+        width: 100%;
+    }
+
     .card{
         width: 45%;
     }
@@ -385,11 +394,16 @@ a{
 @media (max-width : 576px) {
 
     .card-container{
+        max-width: 400px;
+    }
+
+    .card-group{
         width: 100%;
+        justify-content: center;
     }
 
     .card{
-        width: 100%;
+        width: 80%;
     }
 
     .card:hover {
