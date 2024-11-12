@@ -340,7 +340,10 @@ p {
         font-size: 1.1rem;
         color: var(--clr-grey-9);
     }
-    input[type="text"] {
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"]
+    {
         border: 0.1px solid var(--clr-grey-10);
         border-radius: 4px;
         width: 400px;
@@ -356,4 +359,5 @@ p {
         color: var(--clr-white);
         padding: 10px 100px;
         border-radius: 4px;
+        border-style: none;
     }
