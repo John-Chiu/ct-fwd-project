@@ -14,6 +14,7 @@ function handleClickAddToCartBtn(e) {
   const quantity = Number(document.querySelector('.Cake_number').innerText);
   addToCart(productId, quantity);
   btn.disabled = true;
+  btn.innerText = 'Item added to cart';
 }
 
 function addToCart(productId, quantity) {
