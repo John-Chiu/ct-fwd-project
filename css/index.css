@@ -377,9 +377,12 @@ li.series {
     .mobile-mega-link-title {
         color: var(--clr-primary-7);
         font-size: 14px;
-        margin: 10px;
+        margin-top: 10px;
         display:flex;
-        column-gap:8px;
+        flex-direction: row;
+        justify-content: center;
+        padding:10px;
+
     }
 
     a.mobile-mega-link-title{
