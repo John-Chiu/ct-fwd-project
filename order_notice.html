@@ -1,59 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/order_notice.css">
     <link href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css" rel="stylesheet">
-    <title>SukyBakery</title>
+    <title>Order Notice – Suky Bakery</title>
 </head>
+
 <body>
     <!-- navbar -->
-    <div class="nav-logo">
-        <img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link">
-    </div>
     <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link"></a>
+        </div>
         <!-- navbar desktop -->
         <div class="nav-links">
             <ul class="nav-list" id="nav-list">
-                <li><a href="#" class="nav-link">蛋糕及甜點</a></li>
-                <li><a href="#" class="nav-link">關於我們</a></li>
-                <li><a href="#" class="nav-link">訂購須知</a></li>
-                <li><a href="#" class="nav-link">運送政策</a></li>
-                <li><a href="#" class="nav-link">常見問題</a></li>
-                <li><a href="#" class="nav-link">聯絡我們</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="cake">蛋糕及甜點<i class="ph ph-caret-down"></i></a>
+                    <!-- drop down mega-menu-->
+                    <div class="mega-menu">
+                        <div class="mega-menu-lists">
+                            <div class="mega-list">
+                                <p class="mega-link-title">原個蛋糕</p>
+                                <ul class="mega-links" id="whole-cakes">
+                                    <li><a href="#" class="mega-link">所有蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">4寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">5寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">6寸蛋糕</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-list">
+                                <p class="mega-link-title">件裝甜點</p>
+                                <ul class="mega-links" id="petite-desserts">
+                                    <li><a href="#" class="mega-link">曲奇</a></li>
+                                    <li><a href="#" class="mega-link">冬甩</a></li>
+                                    <li><a href="#" class="mega-link">紙杯蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">法式千層酥</a></li>
+                                </ul>
+                            </div>
+                            <!-- Party cake -->
+                            <div class="mega-list">
+                                <p class="mega-link-title">派對蛋糕系列</p>
+                                <ul class="mega-links" id="party-cakes">
+                                    <li><a href="#" class="mega-link">公仔造型蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">旋轉蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">燃燒蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">慶祝蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">鮮花蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">散水餅</a></li>
+                                </ul>
+                            </div>
+                            <!-- Series -->
+                            <div class="mega-list">
+                                <ul class="mega-links" id="whole-cakes">
+                                    <li class="series">
+                                        <img src="./images/Cake/FlowerCake/flowers_cake_megabar.png" class="series">
+                                        <a href="#" class="mega-link-title">鮮花蛋糕系列</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- drop down menu end -->
+                <li><a href="about_us.html" class="nav-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="nav-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="nav-link">運送政策</a></li>
+                <li><a href="faqs.html" class="nav-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="nav-link">聯絡我們</a></li>
             </ul>
-        </div>
-        <!-- navbar icon -->
-        <div class="nav-icons">
-            <ul class="nav-icons-list">
-                <li><a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="#" class="nav-icon"><i class="fa-regular fa-heart"></i></a></li>
-            </ul>
+
+            <!-- navbar icon -->
+            <div class="nav-icons">
+                <ul class="nav-icons-list">
+                    <li><a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
         </div>
         <!-- navbar desktop end -->
 
-        <!-- nav mobile  -->
+        <!-- nav mobile -->
         <div class="nav-mobile">
             <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="mobile-nav-list" id="mobile-nav-list">
-                <li><a href="#" class="nav-link">蛋糕及甜點</a></li>
-                <li><a href="#" class="nav-link">關於我們</a></li>
-                <li><a href="#" class="nav-link">訂購須知</a></li>
-                <li><a href="#" class="nav-link">運送政策</a></li>
-                <li><a href="#" class="nav-link">常見問題</a></li>
-                <li><a href="#" class="nav-link">聯絡我們</a></li>
+                <li class="all-cakes" id="cake-toggle">
+                    <a href="#" class="mobile-mega-drop">蛋糕及甜點<i class="ph ph-caret-down"></i></a>
+                    <!-- mobile mega menu -->
+                    <div class="mobile-mega-menu" id="mobile-mega-menu">
+                        <div class="mobile-mega-menu-lists">
+                            <!-- mega menu section1 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#cake-section">原個蛋糕<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="cake-section">
+                                    <li><a href="#" class="mobile-mega-sublink">所有蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">4寸蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">5寸蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">6寸蛋糕</a></li>
+                                </ul>
+                            </div>
+                            <!-- mega menu section2 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#dessert-section">件裝甜點<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="dessert-section">
+                                    <li><a href="#" class="mobile-mega-sublink">曲奇</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">冬甩</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">紙杯蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">法式千層酥</a></li>
+                                </ul>
+                            </div>
+                            <!-- mega menu section3 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#party-section">派對蛋糕系列<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="party-section">
+                                    <li><a href="#" class="mobile-mega-sublink">公仔造型蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">旋轉蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">燃燒蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">慶祝蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">鮮花蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">散水餅</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="about_us.html" class="mobile-mega-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="mobile-mega-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="mobile-mega-link">運送政策</a></li>
+                <li><a href="faqs.html" class="mobile-mega-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="mobile-mega-link">聯絡我們</a></li>
             </ul>
         </div>
     </nav>
-    <!-- nav mobile end -->
+    <!-- nav end -->
 
 
 
@@ -66,35 +159,36 @@
     <div class="order-contents">
         <div class="order-content">
             <h2>關於付款事宜</h2>
-            <p><i class="ph ph-asterisk"></i>所有訂單均需全額預訂。<br/>
-                <i class="ph ph-asterisk"></i>接受銀行轉帳付款 / FPS / Payme / Alipay / WeChat。<br/>
-                <i class="ph ph-asterisk"></i>付款後，請上傳相關證明文件。<br/>
+            <p><i class="ph ph-asterisk"></i>所有訂單均需全額預訂。<br />
+                <i class="ph ph-asterisk"></i>接受銀行轉帳付款 / FPS / Payme / Alipay / WeChat。<br />
+                <i class="ph ph-asterisk"></i>付款後，請上傳相關證明文件。<br />
                 <i class="ph ph-asterisk"></i>請於下單後48小時內完成付款。
             </p>
         </div>
         <div class="order-content">
             <h2>訂購後事宜</h2>
-            <p><i class="ph ph-asterisk"></i>在成功付款後，我們將發送訂單確認訊息。一旦訂單確認，恕不接受取消，已付款項亦不予退還。如需更改預約日期，請在確認後的48小時內通知我們，並確認新的日期，變更日子最長只限於90天內。<br/>
-                <i class="ph ph-asterisk"></i>如需更改取貨地址或時間，請至少提前24小時通知我們。我們將盡力滿足客戶需求，但不能保證100%配合。<br/>
+            <p><i
+                    class="ph ph-asterisk"></i>在成功付款後，我們將發送訂單確認訊息。一旦訂單確認，恕不接受取消，已付款項亦不予退還。如需更改預約日期，請在確認後的48小時內通知我們，並確認新的日期，變更日子最長只限於90天內。<br />
+                <i class="ph ph-asterisk"></i>如需更改取貨地址或時間，請至少提前24小時通知我們。我們將盡力滿足客戶需求，但不能保證100%配合。<br />
                 <i class="ph ph-asterisk"></i>每個訂單僅限更改一次。如需進行第二次更改，將收取$100的改單費用。感謝您的理解與配合。
             </p>
         </div>
         <div class="order-content">
             <h2>訂單查詢</h2>
-            <p>所有訂單將於48小時內回覆（休息日除外）。客戶可通過Instagram、WhatsApp或Signal 私訊查詢。<br/>
+            <p>所有訂單將於48小時內回覆（休息日除外）。客戶可通過Instagram、WhatsApp或Signal 私訊查詢。<br />
 
-                <i class="ph ph-asterisk"></i>建議客戶在查詢前先查看日曆，以確認所需日期的可用性。<br/>
-                
-                <i class="ph ph-asterisk"></i>我們將根據客戶的訂單順序回覆查詢信息。<br/>
-                
-                <i class="ph ph-asterisk"></i>請客戶在查詢時保持禮貌，互相尊重，並耐心等候回覆。<br/>
-                
-                <i class="ph ph-asterisk"></i>我們僅接受訊息形式的查詢，不接受任何電話聯絡。<br/>
-                
-                <i class="ph ph-asterisk"></i>訂單需提前四天以上預訂；不足三天的急單將收取80元起的附加費用。<br/>
-                </p>
+                <i class="ph ph-asterisk"></i>建議客戶在查詢前先查看日曆，以確認所需日期的可用性。<br />
+
+                <i class="ph ph-asterisk"></i>我們將根據客戶的訂單順序回覆查詢信息。<br />
+
+                <i class="ph ph-asterisk"></i>請客戶在查詢時保持禮貌，互相尊重，並耐心等候回覆。<br />
+
+                <i class="ph ph-asterisk"></i>我們僅接受訊息形式的查詢，不接受任何電話聯絡。<br />
+
+                <i class="ph ph-asterisk"></i>訂單需提前四天以上預訂；不足三天的急單將收取80元起的附加費用。<br />
+            </p>
         </div>
-        
+
     </div>
 
 
@@ -106,31 +200,31 @@
     <footer class="section footer">
         <!-- footer left -->
         <div class="footer-left">
-        <p>FOLLOW US</p>
-        <ul class="footer-icons">
-            <li>
-                <a href="http://www.facebook.com" class="footer-icon">
-                    <i class="fa-brands fa-square-facebook"></i>
-                </a>   
-            </li>
-            <li>
-                <a href="http://www.twitter.com" class="footer-icon">
-                    <i class="fa-brands fa-square-instagram"></i>
-                </a>   
-            </li>
+            <p>FOLLOW US</p>
+            <ul class="footer-icons">
+                <li>
+                    <a href="http://www.facebook.com" class="footer-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" class="footer-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
 
-            <li>
-                <a href="https://www.whatsapp.com/" class="footer-icon">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                </a>   
-            </li>  
-        </ul>
-        <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
-        <p class="copyright">
-            copyright & copy; Travel tours company
-            <span id="date"></span> all right reserved
-        </p>
-    </div>
+                <li>
+                    <a href="https://www.whatsapp.com/" class="footer-icon">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
+            <p class="copyright">
+                copyright & copy; Travel tours company
+                <span id="date"></span> all right reserved
+            </p>
+        </div>
         <!-- footer right -->
         <div class="footer-right">
             <ul class="footer-links">
@@ -144,7 +238,10 @@
         </div>
     </footer>
 
-
+    <!-- hamburger menu and mega menu -->
     <script src="./js/app.js"></script>
+    <script src="./js/megamenu.js"></script>
+
 </body>
+
 </html>
