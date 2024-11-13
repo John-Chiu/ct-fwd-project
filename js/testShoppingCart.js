@@ -16,12 +16,13 @@ const BTN_ADD_TO_CART_CLASSNAME = 'addToCartBtn';
 
 // DEBUG
 console.log('load cart from localStorage:', getCartFromLocalStorage());
-
+// get container where cart items render
 const cartItemListHTML = document.querySelector('.cart-items-list');
 
 displayProducts();
 renderCartHTML();
 
+// add eventlistener to all addToCartBtn
 (function () {
   const onclickHandler = (e) => {
     const btn = e.target;

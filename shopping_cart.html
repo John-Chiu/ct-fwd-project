@@ -80,22 +80,28 @@
             <div class="item-info">
                 <ul class="item-info-details">
                     <li><h3>鮮花蛋糕</h3></li>
-                    <li><h4>FLOWER CAKE</h4></li>
                     <li><h5>選項:5寸 / 紅色 / 原味 / 基本顏色玫瑰花 / 周年蛋糕</h5></li>
                 </ul>
             </div>
             <div class="item-amount">
-                <p>1</p>
+                <div>
+                    <button class="btn-plus">+</button>
+                    <p>1</p>
+                    <button class="btn-remove">-</button>
+                </div>
             </div>
             <div class="item-price">
-                <p>$650</p>
+                <p>$<span>650</span></p>
+            </div>
+            <div>
+                <button class="btn-remove">移除</button>
             </div>
         </div> 
     </div>
 
     <!--  -->
     <div class="purchased-items-footer">
-        <p class="total-price">總計 $99.9</p>
+        <p class="total-price">總計 $<span>99.9</span></p>
         <p class="mention-item">備註</p>
         <div>
             <textarea id="text" name="text" rows="5" cols="55"></textarea>
@@ -155,5 +161,6 @@
 
 
     <script src="./js/app.js"></script>
+    <script src="/js/shopping_cart.js" type="module"></script>
 </body>
 </html>
