@@ -1,0 +1,70 @@
+/* ======= FOR TEST ONLY ======= */
+img {
+  width: 100px;
+  /* height: auto; */
+}
+.test {
+  border: 3px solid black;
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+.cart {
+  border: 3px solid brown;
+}
+.products-list {
+  display: flex;
+}
+/* img.product {
+  width: 100px;
+  height: auto;
+} */
+.cart-items-list {
+  display: flex;
+  flex-direction: row;
+}
+/* ======= FOR TEST ONLY ======= */
+
+
+
+/* .cart-sidebar {
+  width: 33%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upper {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .cart-items-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .cart-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      justify-items: center;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.lower {
+  background-color: lightblue;
+}
+.cart-lower-button {
+  background-color: brown;
+  color: white;
+} */
