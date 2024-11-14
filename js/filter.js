@@ -45,6 +45,37 @@ function filterProducts() {
     });
 }
 
+// ! Filter by URL
+
+// Function to get query parameters from URL
+function getQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        category: params.get('category'),
+        subcategory: params.get('subcategory')
+    };
+}
+
+// Event listener for DOMContentLoaded to apply filters based on URL parameters
+document.addEventListener('DOMContentLoaded', () => {
+    const { category, subcategory } = getQueryParams();
+
+    // Set category filter value
+    if (category) {
+        categoryFilter.value = category;
+        updateSubcategories(); // Update subcategories based on selected category
+    }
+    
+    // Set subcategory filter value
+    if (subcategory) {
+        subcategoryFilter.value = subcategory;
+    }
+
+    // Call the filter function to apply filters
+    filterProducts();
+});
+
+// Event listeners for dropdown changes
 categoryFilter.addEventListener('change', () => {
     updateSubcategories();
 });
