@@ -46,56 +46,64 @@ function renderCartHTML() {
         </ul>
       </div>  
       <div class="item-amount">
-        <div>
-            <button class=${BTN_PLUS_CLASSNAME} data-id=${product.id}>+</button>
+        <div class="btn-item-plmi">
+            <button class=${BTN_PLUS_CLASSNAME} data-id=${product.id}>
+              <i class="fa-solid fa-plus"></i>
+            </button>
             <p>${item.quantity}</p>
-            <button class=${BTN_MINUS_CLASSNAME} data-id=${product.id}>-</button>
+            <button class=${BTN_MINUS_CLASSNAME} data-id=${product.id}>
+              <i class="fa-solid fa-minus"></i>
+            </button>
         </div>
       </div>
       <div class="item-price">
         <p>$<span>${product.price * item.quantity}</span></p>
       </div>
-      <button class="${BTN_REMOVE_CLASSNAME}" data-id=${product.id}>移除</button>
+      <div class="btn-item-remove">
+        <label class="${BTN_REMOVE_CLASSNAME}" data-id=${product.id}><i class="ph ph-trash"></i></label>
+      </div>
       `;
       cartItemListHTML.append(newItem);
     });
-    // TODO come back do HERE!!!!!!!!
-    document.querySelector('.total-price>span').innerText = totalPrice;
-  
-  
-    // +,- button onclick handler for updating cart item quantity
-    const handleClickQuantityBtn = (e) => {
-      const btn = e.target;
+
+    document.querySelector('.total-price > span').innerText = totalPrice;
+
+    // + button onclick handler for updating cart item quantity
+    const handleClickPlusQuantityBtn = (e) => {
+      const btn = e.target.parentElement;
       const id = btn.dataset.id;
-      if (btn.classList.contains(BTN_PLUS_CLASSNAME)) {
-        updateQuantity(id, ADD)
-      } else if (btn.classList.contains(BTN_MINUS_CLASSNAME)) {
-        updateQuantity(id, MINUS);
-      }
+      updateQuantity(id, ADD);
+    };
+
+    // - button onclick handler for updating cart item quantity
+    const handleClickMinusQuantityBtn = (e) => {
+      const btn = e.target.parentElement;
+      const id = btn.dataset.id;
+      updateQuantity(id, MINUS);
     };
   
     // add onclick listener for + button to increase cart item quantity
-    const btnsPlus = document.querySelectorAll(`.${BTN_PLUS_CLASSNAME}`);
+    const btnsPlus = document.querySelectorAll(`.${BTN_PLUS_CLASSNAME} > i`);
     btnsPlus.forEach((btn) => {
-      btn.addEventListener('click', handleClickQuantityBtn);
+      btn.addEventListener('click', handleClickPlusQuantityBtn);
     });
   
     // add onclick listener for - button to decrease cart item quantity
-    const btnsMinus = document.querySelectorAll(`.${BTN_MINUS_CLASSNAME}`);
+    const btnsMinus = document.querySelectorAll(`.${BTN_MINUS_CLASSNAME} > i`);
     btnsMinus.forEach((btn) => {
-      btn.addEventListener('click', handleClickQuantityBtn);
+      btn.addEventListener('click', handleClickMinusQuantityBtn);
     });
   
   
     // handler for remove button
     const handleClickRemoveButton = (e) => {
-      const btn = e.target;
+      const btn = e.target.parentElement;
       const id = btn.dataset.id;
       updateQuantity(id, REMOVE);
     }
   
     // add listener to all remove btn
-    const btnsRemove = document.querySelectorAll(`.${BTN_REMOVE_CLASSNAME}`);
+    const btnsRemove = document.querySelectorAll(`.${BTN_REMOVE_CLASSNAME} > i`);
     btnsRemove.forEach((btn) => {
       btn.addEventListener('click', handleClickRemoveButton);
     });
