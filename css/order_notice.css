@@ -535,7 +535,7 @@ li.series {
 
     h2,
     h3 {
-        color: var(--clr-primary-7);
+        color: var(--clr-primary-8);
     }
 
     p {
@@ -572,4 +572,11 @@ p {
     color: var(--clr-grey-10);
     font-size: 0.8rem;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .order-contents {
+        margin: 50px 50px;
+}
 }
