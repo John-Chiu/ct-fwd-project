@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="
+https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css
+" rel="stylesheet">
+    <link rel="stylesheet" href="/css/faqs.css">
+    <title>Faqs - Suky Bakery</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="/images/SukyLogo-1050x300.png" alt="logo" class="logo-link"></a>
+        </div>
+        <!-- navbar desktop -->
+        <div class="nav-links">
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="cake">蛋糕及甜點<i class="ph ph-caret-down"></i></a>
+                    <!-- drop down mega-menu-->
+                    <div class="mega-menu">
+                        <div class="mega-menu-lists">
+                            <div class="mega-list">
+                                <p class="mega-link-title">原個蛋糕</p>
+                                <ul class="mega-links" id="whole-cakes">
+                                    <li><a href="#" class="mega-link">所有蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">4寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">5寸蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">6寸蛋糕</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-list">
+                                <p class="mega-link-title">件裝甜點</p>
+                                <ul class="mega-links" id="petite-desserts">
+                                    <li><a href="#" class="mega-link">曲奇</a></li>
+                                    <li><a href="#" class="mega-link">冬甩</a></li>
+                                    <li><a href="#" class="mega-link">紙杯蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">法式千層酥</a></li>
+                                </ul>
+                            </div>
+                            <!-- Party cake -->
+                            <div class="mega-list">
+                                <p class="mega-link-title">派對蛋糕系列</p>
+                                <ul class="mega-links" id="party-cakes">
+                                    <li><a href="#" class="mega-link">公仔造型蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">旋轉蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">燃燒蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">慶祝蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">鮮花蛋糕</a></li>
+                                    <li><a href="#" class="mega-link">散水餅</a></li>
+                                </ul>
+                            </div>
+                            <!-- Series -->
+                            <div class="mega-list">
+                                <ul class="mega-links" id="whole-cakes">
+                                    <li class="series">
+                                        <img src="./images/Cake/FlowerCake/flowers_cake_megabar.png" class="series">
+                                        <a href="#" class="mega-link-title">鮮花蛋糕系列</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- drop down menu end -->
+                <li><a href="about_us.html" class="nav-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="nav-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="nav-link">運送政策</a></li>
+                <li><a href="faqs.html" class="nav-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="nav-link">聯絡我們</a></li>
+            </ul>
+
+            <!-- navbar icon -->
+            <div class="nav-icons">
+                <ul class="nav-icons-list">
+                    <li><a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar desktop end -->
+
+        <!-- nav mobile -->
+        <div class="nav-mobile">
+            <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li class="all-cakes" id="cake-toggle">
+                    <a href="#" class="mobile-mega-drop">蛋糕及甜點<i class="ph ph-caret-down"></i></a>
+                    <!-- mobile mega menu -->
+                    <div class="mobile-mega-menu" id="mobile-mega-menu">
+                        <div class="mobile-mega-menu-lists">
+                            <!-- mega menu section1 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#cake-section">原個蛋糕<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="cake-section">
+                                    <li><a href="#" class="mobile-mega-sublink">所有蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">4寸蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">5寸蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">6寸蛋糕</a></li>
+                                </ul>
+                            </div>
+                            <!-- mega menu section2 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#dessert-section">件裝甜點<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="dessert-section">
+                                    <li><a href="#" class="mobile-mega-sublink">曲奇</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">冬甩</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">紙杯蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">法式千層酥</a></li>
+                                </ul>
+                            </div>
+                            <!-- mega menu section3 -->
+                            <div class="mobile-mega-list">
+                                <a class="mobile-mega-link-title" href="#" data-target="#party-section">派對蛋糕系列<i
+                                        class="ph ph-caret-down"></i></a>
+                                <ul class="mobile-mega-links" id="party-section">
+                                    <li><a href="#" class="mobile-mega-sublink">公仔造型蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">旋轉蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">燃燒蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">慶祝蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">鮮花蛋糕</a></li>
+                                    <li><a href="#" class="mobile-mega-sublink">散水餅</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="about_us.html" class="mobile-mega-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="mobile-mega-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="mobile-mega-link">運送政策</a></li>
+                <li><a href="faqs.html" class="mobile-mega-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="mobile-mega-link">聯絡我們</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- Title -->
+    <div class="banner">
+        <h2>常見問題</h2>
+        <h3>FAQS</h3>
+    </div>
+
+        <!-- Faqs -->
+        <ul class="faqs">
+            <!-- Q1 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">如何訂購？</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        請通過我們的網站選擇您喜愛的蛋糕款式和數量，並填寫相關訂單信息。訂單確認後，我們將通過電子郵件或電話與您聯繫確認訂單詳情。
+                    </div>
+                </div>
+            </li>
+            <!-- Q2 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">如何付款？</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        我們接受多種付款方式，包括信用卡、銀行轉賬、FPS、Payme、Alipay和WeChat。所有訂單需在確認後進行全額付款，並請於下單後48小時內完成付款。付款後，請上傳相關證明文件。
+                    </div>
+                </div>
+            </li>
+            <!-- Q3 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">配送服務有哪些？</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        我們提供本地配送服務，配送範圍和費用將根據您的地址計算。請在訂單中提供準確的配送地址和聯繫方式，以確保順利送達。我們的送貨安排將使用Lalamove，客戶可自行選擇步兵或車手服務。客戶提供地址後，我們將先行查詢運費並報價，實際費用可能因送貨當天的時間及日期而有所變動。
+                    </div>
+                </div>
+            </li>
+            <!-- Q4 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">如何修改或取消訂單？</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        訂單確認後，如需修改或取消，請在24小時內聯繫我們的客服專員。由於蛋糕為定制產品，超過24小時後的修改或取消可能會產生額外費用。在成功付款後，我們將發送訂單確認訊息。一旦訂單確認，恕不接受取消，已付款項亦不予退還。如需更改預約日期，請在確認後的48小時內通知我們，並確認新的日期，變更日子最長只限於90天內。如需更改取貨地址或時間，請至少提前24小時通知我們。我們將盡力滿足客戶需求，但不能保證100%配合。每個訂單僅限更改一次。如需進行第二次更改，將收取$100的改單費用。感謝您的理解與配合。
+                    </div>
+                </div>
+            </li>
+            <!-- Q5 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">退換貨政策是什麼？</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        由於蛋糕為食品類產品，除非產品有質量問題，我們不接受退換貨。如收到的蛋糕有任何問題，請在收到後24小時內聯繫我們，我們將盡快為您處理。
+                    </div>
+                </div>
+            </li>
+            <!-- Q6 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">如何查詢訂單?</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        所有訂單將於48小時內回覆（休息日除外）。客戶可通過Instagram、WhatsApp或Signal私訊查詢。建議客戶在查詢前先查看日曆，以確認所需日期的可用性。我們將根據客戶的訂單順序回覆查詢信息。請客戶在查詢時保持禮貌，互相尊重，並耐心等候回覆。我們僅接受訊息形式的查詢，不接受任何電話聯絡。訂單需提前四天以上預訂；不足三天的急單將收取80元起的附加費用。
+                    </div>
+                </div>
+            </li>
+            <!--Q7 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">取貨方式有哪些？</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        客戶可預約時間到店自取，或於停車場門口交收，亦可安排送至本店樓下。若客戶未能於預定時間取貨或無法及時回應訊息，我們將僅等待10分鐘，超過時限將視為棄單處理，訂單將不予退款。在運送過程中，蛋糕可能會面臨損毀或延誤的風險。我們僅提供叫車送貨服務，並未從中獲取任何利益，客戶需自行承擔相關風險。客戶亦可選擇其他送貨服務或親自提取貨品。如遇八號風球或黑色暴雨等惡劣天氣，取貨時間可能會有所調整。如在營業時間內已經生效，取貨將順延至下個工作天。因天氣原因而取消訂單將不予退款。
+                    </div>
+                </div>
+            </li>
+            <!-- Q8 -->
+            <li>
+                <div class="faqs-question-container">
+                    <div class="faqs-question">
+                        <h3 class="question-title">其他注意事項</h3>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faqs-answer">
+                        請在收到蛋糕後盡快食用，以保證最佳口感和品質。如有任何特殊要求或過敏原提示，請在訂單中註明，我們將盡力滿足您的需求。客戶自取可自備保溫袋，若需了解蛋糕盒的大小，歡迎隨時向我們查詢。
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- footer -->
+    <footer class="section footer">
+        <!-- footer left -->
+        <div class="footer-left">
+            <p>FOLLOW US</p>
+            <ul class="footer-icons">
+                <li>
+                    <a href="https://www.facebook.com/p/SukyBakery-100063550942171/?_rdr" class="footer-icon">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/suky_bakery/" class="footer-icon">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://api.whatsapp.com/send/?phone=85252480004&text&type=phone_number&app_absent=0"
+                        class="footer-icon">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>MAI TAK INDUSTRIAL BUILDING, KWUN TONG, HONG KONG</p>
+            <p class="copyright">
+                copyright & copy; Travel tours company
+                <span id="date"></span> all right reserved
+            </p>
+        </div>
+        <!-- footer right -->
+        <div class="footer-right">
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">蛋糕及甜點</a></li>
+                <li><a href="about_us.html" class="footer-link">關於我們</a></li>
+                <li><a href="order_notice.html" class="footer-link">訂購須知</a></li>
+                <li><a href="shopping_policy.html" class="footer-link">運送政策</a></li>
+                <li><a href="#" class="footer-link">常見問題</a></li>
+                <li><a href="contact_us.html" class="footer-link">聯絡我們</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- hamburger menu and mega menu -->
+    <script src="./js/app.js"></script>
+    <script src="./js/megamenu.js"></script>
+
+    <script src="./js/questions.js"></script>
+</body>
+
+</html>
