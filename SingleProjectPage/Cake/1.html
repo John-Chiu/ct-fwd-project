@@ -244,7 +244,6 @@
             </div>
 
             <div class="card-container">
-                <!-- TODO use js to generate these products -->
                 <div class="card-group" id="card-group">
                     
                 </div>
@@ -303,72 +302,8 @@
     <script src="/js/Count.js"></script>
     <script src="/js/singleProduct.js"></script>
     
-    <script>
-        // Function to fetch and display products
-        async function fetchProducts() {
-            try {
-                const response = await fetch('../json/cake_1.json'); // Adjust path if necessary
-                const products = await response.json();
-        
-                const cardGroup = document.getElementById('card-group');
-        
-                products.forEach(product => {
-                    // Create card element
-                    const card = document.createElement('div');
-                    card.className = 'card';
-        
-                    // Create anchor element
-                    const anchor = document.createElement('a');
-                    anchor.href = product.link;
-        
-                    // Create image element
-                    const img = document.createElement('img');
-                    img.src = product.image;
-                    img.alt = product.title;
-                    img.className = 'card-image';
-        
-                    // Create content div
-                    const content = document.createElement('div');
-                    content.className = 'card-content';
-        
-                    // Create title element
-                    const title = document.createElement('h3');
-                    title.className = 'card-title';
-                    title.textContent = product.title;
-        
-                    // Create text element
-                    const text = document.createElement('p');
-                    text.className = 'card-text';
-                    text.textContent = product.description;
-        
-                    // Create price element
-                    const price = document.createElement('h3');
-                    price.className = 'card-price';
-                    price.textContent = product.price;
-        
-                    // Append elements to content
-                    content.appendChild(title);
-                    content.appendChild(text);
-                    content.appendChild(price);
-        
-                    // Append image and content to anchor
-                    anchor.appendChild(img);
-                    anchor.appendChild(content);
-        
-                    // Append anchor to card
-                    card.appendChild(anchor);
-        
-                    // Append card to card group
-                    cardGroup.appendChild(card);
-                });
-            } catch (error) {
-                console.error('Error fetching products:', error);
-            }
-        }
-        
-        // Call the function to fetch products on page load
-        document.addEventListener('DOMContentLoaded', fetchProducts);
-        </script>
+    <!-- generate similar products -->
+    <script src="/SingleProjectPage/js/similarProducts.js" type="module"></script>
 </body>
 
 </html>
