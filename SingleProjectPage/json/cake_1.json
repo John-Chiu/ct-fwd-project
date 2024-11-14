@@ -1,0 +1,30 @@
+[
+    {
+        "title": "紫羅蘭花卉蛋糕",
+        "description": "紫色花卉點綴，搭配細膩的奶油，讓這款蛋糕充滿優雅與芬芳。入口即化的口感，適合享受午後時光的美好甜點。",
+        "price": "$200",
+        "image": "/images/Cake/FlowerCake/FlowerCake_3.png",
+        "link": "./2.html"
+    },
+    {
+        "title": "紅玫瑰花卉蛋糕",
+        "description": "紅玫瑰的華麗裝飾，結合濃郁巧克力，完美表現愛與浪漫。層層疊疊的蛋糕體，帶來奢華的享受，適合特別的慶祝時刻。",
+        "price": "$220",
+        "image": "/images/Cake/FlowerCake/FlowerCake_2.png",
+        "link": "./3.html"
+    },
+    {
+        "title": "白蘭花卉蛋糕",
+        "description": "純白花卉設計象徵純潔與高雅，入口即化的口感令人回味。細緻的奶油與柔軟的蛋糕體，完美融合，帶來無與倫比的味覺享受。",
+        "price": "$220",
+        "image": "/images/Cake/FlowerCake/FlowerCake_1.png",
+        "link": "./4.html"
+    },
+    {
+        "title": "美樂蒂與庫洛米曲奇",
+        "description": "這款曲奇融合了美樂蒂與庫洛米的可愛造型，香甜酥脆，帶來童趣與美味的雙重享受，每一口都讓人愛不釋手。",
+        "price": "$120",
+        "image": "/images/Cookies/Cookies_2.png",
+        "link": "../Single/cookies/1.html"
+    }
+]
