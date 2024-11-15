@@ -59,7 +59,7 @@ const products = [
     chineseName: '散水餅',
     desc: '傳統的散水餅，象徵祝福與分享，口感香甜，適合用於傳統節慶或特別的家庭聚會。',
     price: 120,
-    imagePath: '/images/Cookies/Cookies_Zoomin_2.png',
+    imagePath: '/images/Cookies/Cookies_8.png',
     filePath: '/SingleProjectPage/Celebrating/EndCookies/1.html'
   },
   {
