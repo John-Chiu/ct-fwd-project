@@ -21,7 +21,7 @@ const similarProductsListJSON = {
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log('similarProducts script loaded');
-  const cardGroup = document.getElementById('card-group');
+  const cardGroup = document.getElementsByClassName('card-group')[0];
 
   // get current product id 
   const productId = document.getElementsByClassName('addToCartBtn')[0].dataset.id;
