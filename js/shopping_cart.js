@@ -17,8 +17,33 @@ const BTN_ADD_TO_CART_CLASSNAME = 'addToCartBtn';
 console.log('load cart from localStorage:', getCartFromLocalStorage());
 // get container where cart items render
 const cartItemListHTML = document.querySelector('.purchased-items');
+const cartNoItemMsg = document.getElementById('cartNoItemMsg');
+const item_bar = document.querySelector('.item-bar');
+const purchased_items_footer = document.querySelector('.purchased-items-footer');
 
-renderCartHTML();
+renderThisPage();
+
+function renderThisPage() {
+  if (getCartFromLocalStorage().length === 0) {
+    cartNoItemMsg.style.display = 'block';
+
+    // item_bar.style.visibility = 'hidden';
+    // purchased_items.style.visibility = 'hidden';
+    // purchased_items_footer.style.visibility = 'hidden';
+
+    item_bar.style.display = 'none';
+    cartItemListHTML.style.display = 'none';
+    purchased_items_footer.style.display = 'none';
+
+  } else {
+    cartNoItemMsg.style.display = 'none';
+
+    item_bar.style.display = 'block';
+    cartItemListHTML.style.display = 'block';
+    purchased_items_footer.style.display = 'block';
+    renderCartHTML();
+  }
+}
 
 // clear and render shopping cart content:
 // item, price, quantity, subtotal, total
@@ -131,7 +156,7 @@ function updateQuantity(productId, action) {
       break;
   }
   updateLocalStorage(cart);
-  renderCartHTML();
+  renderThisPage();
 }
 
 // =======  helper function =======
