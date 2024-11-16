@@ -243,6 +243,7 @@ li.series {
     transition: var(--transition);
     transform: translateY(100%);
     overflow-y: scroll;
+    
 }
 
 /* burger mobile button */
@@ -257,6 +258,10 @@ li.series {
 
     .mobile-icons {
         display: none;
+    }
+
+    .mobile-nav-list {
+        display:none;
     }
 
     .navbar {
@@ -369,7 +374,6 @@ li.series {
     align-items: center;
     overflow-y: scroll;
     padding: 20px 0px;
-
 }
 
 /* mega menu */
