@@ -698,3 +698,10 @@ h2.footer-header {
 .swiper-pagination {
     color: var(--clr-white);
 }
+
+
+
+.signature-cake a{
+    text-decoration: none;
+    color: black;
+}
