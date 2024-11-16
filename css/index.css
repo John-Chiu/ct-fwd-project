@@ -614,6 +614,10 @@ h2.footer-header {
         height: 190px;
         object-fit: cover;
     }
+    .signature-cake a {
+        text-decoration: none;
+        color:var(--clr-gray-10);
+    }
 }
 
 @media (max-width: 768px) {
@@ -637,6 +641,11 @@ h2.footer-header {
 
     .signature-cake p {
         color: var(--clr-primary-8);
+    }
+    
+    .signature-cake a {
+        text-decoration: none;
+        color:var(--clr-gray-10);
     }
 
     .signature-cake-grid,
