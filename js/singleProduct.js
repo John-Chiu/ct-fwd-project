@@ -58,51 +58,57 @@ const body = document.body;
 
 const style = document.createElement('style');
 style.textContent = `
-.message {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #CB997E;
-  color: white;
-  font-size : 24px;
-  padding: 12px 24px;
-  border-radius: 5px;
-  display: none; 
-  transition: opacity 0.5s ease-in-out;
-}
+  .message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #CB997E;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    z-index: 1000;
 
-.message.show {
-  display: block; /* Show the message */
-  opacity: 1; /* Fully visible */
-}
+    white-space: pre;
+    text-align:center;
+  }
+
+  .message.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
 `;
 body.appendChild(style);
 
 const button = document.querySelector(".addToCartBtn");
 
-const message = document.createElement('div');
-message.className = 'message';
-message.textContent = '成功！產品已加入購物車！';
-body.appendChild(message);
-
-
 function showMessage() {
   const message = document.createElement('div');
   message.className = 'message';
-  message.textContent = '成功！產品已加入購物車！';
-  
+  message.textContent = '成功！';
+  message.textContent += '\n';
+  message.textContent += '產品已加入購物車！';
+
+
   body.appendChild(message);
   
-  message.classList.add('show');
+  // Trigger the transition
+  requestAnimationFrame(() => {
+    message.classList.add('show');
+  });
 
   setTimeout(() => {
     message.classList.remove('show');
-    
 
     setTimeout(() => {
       body.removeChild(message);
-    }, 500)
+    }, 500); // Wait for transition to finish before removing from DOM
   }, 3000);
 }
+
 button.addEventListener('click', showMessage);
