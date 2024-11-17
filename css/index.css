@@ -238,7 +238,7 @@ li.series {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     font-size: 2rem;
     transition: var(--transition);
     transform: translateY(100%);
@@ -571,10 +571,53 @@ h2.footer-header {
     Signature Cake
     ================ */
 
+    li.product-name {
+        color: var(--clr-primary-8);
+        font-size: 15px;
+    }
+
+
+    li.product-price {
+        color:var(--clr-grey-10);
+    }
+
+    .view-more-btn {
+        display:flex;
+        justify-content: center;
+        margin-top:30px;
+    }
+
+    .btn {
+        all: unset;
+        border: 1px solid var(--clr-primary-8);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        color: var(--clr-primary-8);
+        font-size: 0.75rem;
+        margin-top: 10px;
+    
+        a {
+            color: var(--clr-primary-8);
+            font-size: 0.9rem;
+        }
+    }
+    
+    .btn:hover {
+        background: var(--clr-primary-8);
+        border: 1px solid var(--clr-primary-8);
+    
+        a {
+            color: var(--clr-white);
+        }
+    }
+    
+        
 @media (min-width: 768px) {
 
     .signature-cake {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .signature-cake-title {
@@ -596,23 +639,46 @@ h2.footer-header {
         font-size: 1rem;
     }
 
+    .cake {
+        margin:10px;
+    }
+
     .signature-cake-grid,
     .cake-grid {
         display: flex;
-        gap: 10px;
+        gap: 8px;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .sc-img {
-        width: 250px;
+        width: 230px;
         height: 300px;
         object-fit: cover;
     }
 
     .wc-img {
-        width: 160px;
-        height: 190px;
+        width: 200px;
+        height: 220px;
         object-fit: cover;
+    }
+    .signature-cake a {
+        text-decoration: none;
+        color:var(--clr-gray-10);
+    }
+    li.product-name {
+        color: var(--clr-primary-8);
+    }
+
+
+    li.product-price {
+        color:var(--clr-grey-10);
+    }
+
+    .view-more-btn {
+        display:flex;
+        justify-content: center;
+        margin-top:30px;
     }
 }
 
@@ -639,6 +705,10 @@ h2.footer-header {
         color: var(--clr-primary-8);
     }
 
+    .signature-cake a {
+        text-decoration: none;
+    }
+
     .signature-cake-grid,
     .cake-grid {
         display: flex;
@@ -657,11 +727,41 @@ h2.footer-header {
     }
 
     .wc-img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 220px;
         object-fit: cover;
     }
-}
+
+    .btn {
+        all: unset;
+        border: 1px solid var(--clr-primary-8);
+        border-radius: 20px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        color: var(--clr-primary-8);
+        font-size: 0.75rem;
+        margin-top: 10px;
+    
+        a {
+            color: var(--clr-primary-8);
+            font-size: 0.9rem;
+        }
+    }
+    
+    .btn:hover {
+        background: var(--clr-primary-8);
+        border: 1px solid var(--clr-primary-8);
+    
+        a {
+            color: var(--clr-white);
+        }
+    }
+    }
+    
+
+
+
 
 /* =================
     Banner
