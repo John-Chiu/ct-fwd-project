@@ -290,7 +290,10 @@ li.series {
         justify-content: space-between;
         z-index: 100;
     }
-
+    .nav-logo
+    {
+        display:none;
+    }
     .nav_list {
         display: none;
     }
@@ -325,19 +328,23 @@ li.series {
         color: var(--clr-primary-6);
     }
 
+
     .mobile-icons {
         display: flex;
         flex-direction: row;
         width: 100vw;
         justify-content: space-between;
         /* margin: 50px; */
-        top: 25px;
+        top: 15px;
         position: fixed;
         align-items: center;
         padding: 0px 30px;
         text-align: center;
     }
-
+    
+    .mobile-logo {
+        width:180px;
+    }
 
 }
 
