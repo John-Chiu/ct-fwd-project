@@ -238,11 +238,12 @@ li.series {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
     font-size: 2rem;
     transition: var(--transition);
     transform: translateY(100%);
     overflow-y: scroll;
+    
 }
 
 /* burger mobile button */
@@ -257,6 +258,10 @@ li.series {
 
     .mobile-icons {
         display: none;
+    }
+
+    .mobile-nav-list {
+        display:none;
     }
 
     .navbar {
@@ -285,7 +290,10 @@ li.series {
         justify-content: space-between;
         z-index: 100;
     }
-
+    .nav-logo
+    {
+        display:none;
+    }
     .nav_list {
         display: none;
     }
@@ -320,19 +328,23 @@ li.series {
         color: var(--clr-primary-6);
     }
 
+
     .mobile-icons {
         display: flex;
         flex-direction: row;
         width: 100vw;
         justify-content: space-between;
         /* margin: 50px; */
-        top: 25px;
+        top: 15px;
         position: fixed;
         align-items: center;
         padding: 0px 30px;
         text-align: center;
     }
-
+    
+    .mobile-logo {
+        width:180px;
+    }
 
 }
 
@@ -369,7 +381,6 @@ li.series {
     align-items: center;
     overflow-y: scroll;
     padding: 20px 0px;
-
 }
 
 /* mega menu */
@@ -469,7 +480,6 @@ a.mobile-mega-link-title {
     padding: 50px 120px;
     display: grid;
     grid-template-columns: 80% 20%;
-    
 
 }
 
@@ -560,9 +570,17 @@ h2.footer-header {
     .footer-info {
         font-size:16px;
     }
+
 }
 
+/* Banner  */
+.banner {
+    margin-top:var(--navbar-desktop-height);
+}
+
+
 /*  ====== Global Page section - end  =========*/
+
 
 /* =================
     Banner
