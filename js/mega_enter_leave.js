@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const megaMenu = item.querySelector(".mega-menu");
 
     if (megaMenu) {
+      megaMenu.style.visibility = "hidden"; 
       item.addEventListener("mouseenter", () => {
         megaMenu.style.visibility = "visible";
         megaMenu.style.opacity = "1";
@@ -10,9 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       item.addEventListener("mouseleave", () => {
-        megaMenu.style.visibility = "hidden";
         megaMenu.style.opacity = "0";
         megaMenu.style.transform = "translateY(10px)";
+
+        setTimeout(() => {
+          megaMenu.style.visibility = "hidden"; 
+        }, 500); 
       });
     }
   });
