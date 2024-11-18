@@ -62,7 +62,7 @@ function renderCartHTML() {
 
     newItem.innerHTML = `
       <div>
-        <img src="${product.imagePath}" class="item-img" alt="item-img">
+        <img src="${product.imagePathForCart}" class="item-img" alt="item-img">
       </div>  
       <div class="item-info">
         <ul class="item-info-details">
