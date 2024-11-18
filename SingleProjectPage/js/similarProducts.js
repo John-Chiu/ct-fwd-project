@@ -1,4 +1,4 @@
-import products from "/js/products.js";
+import products from "../../js/products.js";
 
 
 const similarProductsListJSON = {
