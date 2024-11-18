@@ -1,4 +1,4 @@
-import products from '/js/products.js';
+import products from './products.js';
 
 // DEBUG
 console.log('load products:', products);
