@@ -58,6 +58,9 @@ body {
     line-height: 1.5;
     font-size: 0.875rem;
     /* margin: 0 50px; */
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 ul {
@@ -476,11 +479,15 @@ a.mobile-mega-link-title {
     /* background: var(--clr-gray-10); */
     background: var(--clr-primary-1);
     text-align: left;
-    margin: 50px 0 0 0;
+    margin: 50px 0px 0px 0px;
     padding: 50px 120px;
     display: grid;
     grid-template-columns: 80% 20%;
-
+    bottom:0;
+    width:100%;
+    right:0;
+    left:0;
+    flex-grow:2;
 }
 
 h2.footer-header {
